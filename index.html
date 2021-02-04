@@ -2,11 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta property="og:url"                content="#"/>
-	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content=" Display Flex" />
-	<meta property="og:description"        content="A page made using Display Flex" />
-	<meta property="og:image"              content="img/typography.png"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title> Display Flex </title>
 	<script src="https://kit.fontawesome.com/d923aad626.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -14,12 +11,14 @@
 </head>
 <body>
 	<header>
-		<div class="header-wraper">
+		<div class=" container header-wraper d-flex">
 			<a class="logo" href="index.html">
-				<img class="logo-img" src="images/logo.svg" alt="logo">
+				<img class="logo-img" src="img/logo.svg" alt="logo">
 		    </a>
-		    <nav class="navigation">
+		    <div class="nav-div"> 
+		      <nav class="navigation">
 		    	<ul class="nav-ul"> 
+		    	  <div class="ul-div">
 		    		<li class="nav-li"> 
 		    			<a href="index.html" class="list"> home </a>
 				    </li>
@@ -32,24 +31,26 @@
 				    <li class="nav-li"> 
 				    	<a href="index.html" class="list"> contact </a>
 				    </li>
-			    </ul>
-		    </nav>
+				  </div>
+			    </ul>	
+		      </nav>
+		    </div>
 		    <div class="icons">
-		    	<i class="fab fa-google-plus-g"></i>
-		    	<i class="fab fa-facebook-f"></i>
-		    	<i class="fab fa-youtube"></i>
-		    	<i class="fas fa-search"></i>	
+		    	<i class="fab fa-google-plus-g icon"></i>
+		    	<i class="fab fa-facebook-f icon"></i>
+		    	<i class="fab fa-youtube icon"></i>
+		    	<i class="fas fa-search icon"></i>	
 		    </div>
 		</div>
 	</header>
 	<section class="first-section">
-		<div class="container">
-			<img src="img/section1-img.png" alt="section1-computer">
+		<div class="first-container">
+			<img class="section1-img" src="img/section1-img.png" alt="section1-computer">		
 		</div>
 	</section>
 	<section class="second-section">
 		<div class="container">
-			<h3> VIDEOS | view all videos </h3>
+			<h3 class="videos-h3"> VIDEOS | view all videos </h3>
 			<div class="videos-wraper d-flex">
 				<div class="video">
 					<p> EMBEDED YOUTUBE VIDEO GOES HERE </p>
@@ -62,23 +63,23 @@
 	</section>
     <section class="third-section">
 		<div class="container">
-			<h3> NEWS | view all news </h3>
+			<h3 class="news-h3"> NEWS | view all news </h3>
 			<div class="news-wraper d-flex">
 				<div class="news-box">
-					<img src="img/typography.jpg" alt="typography"> 
-					<p> TYPOGRAPHY LAB </p>
+					<img src="img/typography.png" alt="typography"> 
+					<p class="news-text"> TYPOGRAPHY LAB </p>
 				</div>
 				<div class="news-box">
-					<img src="img/computer.jpg" alt="computer">
-					<p> ONLINE MARKETING </p>
+					<img src="img/computer.png" alt="computer">
+					<p class="news-text"> ONLINE MARKETING </p>
 				</div>
 				<div class="news-box">
-					<img src="img/statue.jpg" alt="statue-head">
-					<p> C# CODING </p>
+					<img src="img/statue.png" alt="statue-head">
+					<p class="news-text"> C# CODING </p>
 				</div>
 				<div class="news-box">
-					<img src="img/typewriter.jpg" alt="typewriter">
-					<p> INTERFACE DESIGN </p>
+					<img src="img/typewriter.png" alt="typewriter">
+					<p class="news-text"> INTERFACE DESIGN </p>
 				</div>
 			</div>
 		</div>
@@ -86,26 +87,27 @@
 
 	<section class="fourth-section">
 		<div class="container">
-			<h3> FEATURED | view all featured media </h3>
+
+			<h3 class="featured-h3"> FEATURED | view all featured media </h3>
 			<div class="featured-wraper d-flex">
 				<div class="featured">
-					<h4>  RESPONSIVE WEB DESIGN </h4>
+					<h4 class="box-h4">  RESPONSIVE WEB DESIGN </h4>
 					<div class="featured-box">
 						<img src="img/finger.svg" alt="finger-image">
 						<p class="featured-text"> approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. </p>
 					</div>
 					<div class="read">
-						<a href="#"> read more </a>
+						<a href="index.html"> read more </a>
 					</div>
 				</div>
 				<div class="featured">
-					<h4>  APP DEVELOPMENT </h4>
+					<h4 class="box-h4">  APP DEVELOPMENT </h4>
 					<div class="featured-box">
 						<img src="img/phone.svg" alt="phone-image">
 						<p class="featured-text"> Mobile application development is the process of making or creating a mobile application to run on various mobile platforms. A mobile platform is a mobile operating system. </p>
 					</div>
 					<div class="read">
-						<a href="#"> read more </a>
+						<a href="index.html"> read more </a>
 					</div>
 				</div>
 			</div>
